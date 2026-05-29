@@ -63,5 +63,12 @@ def test_response_time():
 
 
 
+            if response_time > 8000:
+                print("🔴 Slow API (>8000ms)")
+            else:
+                print("🟢 Fast API")
+
+        except Exception as e:
+            print("Error:", e)
 
 test_response_time()
