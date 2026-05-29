@@ -1,9 +1,5 @@
 name: API Response Time Gate
 
-# This workflow lives in the TESTAPI repo.
-# It runs on every PR and calls the tester from api-response-time-tester.
-# Branch protection rules require it to pass before a merge is allowed.
-
 on:
   pull_request:
     branches: [ main, master ]
@@ -11,6 +7,6 @@ on:
 
 jobs:
   call-api-tester:
-    name: api-response-time-test        # ← must match the status check name in branch protection
+    name: api-response-time-test
     uses: Abhishekbisht28/api-response-time-tester/.github/workflows/api-test.yml@master
-    secrets: inherit                    # passes all secrets from testapi to the tester
+    secrets: inherit
