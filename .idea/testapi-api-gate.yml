@@ -8,7 +8,6 @@ on:
   pull_request:
     branches: [ main, master ]
     types: [ opened, synchronize, reopened ]
-
 jobs:
   call-api-tester:
     name: api-response-time-test        # ← must match the status check name in branch protection
