@@ -1,0 +1,232 @@
+[
+  {
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics",
+      "description": "Gadgets, phones, laptops and accessories"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Books",
+      "description": "Fiction, non-fiction and academic titles"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 3,
+    "fields": {
+      "name": "Clothing",
+      "description": "Men and women apparel"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 4,
+    "fields": {
+      "name": "Home & Kitchen",
+      "description": "Furniture, cookware and home decor"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 5,
+    "fields": {
+      "name": "Sports",
+      "description": "Sports equipment and fitness gear"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "Wireless Headphones",
+      "description": "Noise-cancelling over-ear Bluetooth headphones",
+      "price": "2499.00",
+      "stock": 50,
+      "category": 1
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "Mechanical Keyboard",
+      "description": "TKL mechanical keyboard with RGB backlight",
+      "price": "3299.00",
+      "stock": 3,
+      "category": 1
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "USB-C Hub",
+      "description": "7-in-1 USB-C multiport adapter",
+      "price": "999.00",
+      "stock": 120,
+      "category": 1
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "name": "Clean Code",
+      "description": "A Handbook of Agile Software Craftsmanship by Robert C. Martin",
+      "price": "599.00",
+      "stock": 30,
+      "category": 2
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+      "name": "Designing Data-Intensive Applications",
+      "description": "The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+      "price": "849.00",
+      "stock": 2,
+      "category": 2
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+      "name": "Running T-Shirt",
+      "description": "Breathable polyester blend running tee",
+      "price": "349.00",
+      "stock": 200,
+      "category": 3
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+      "name": "Yoga Mat",
+      "description": "Non-slip 6mm thick exercise mat with carry strap",
+      "price": "799.00",
+      "stock": 0,
+      "category": 5
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 8,
+    "fields": {
+      "name": "French Press Coffee Maker",
+      "description": "800ml stainless steel French press",
+      "price": "1199.00",
+      "stock": 15,
+      "category": 4
+    }
+  },
+
+  {
+    "model": "store.order",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "quantity": 2,
+      "status": "pending",
+      "created_at": "2026-05-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 2,
+    "fields": {
+      "product": 3,
+      "quantity": 1,
+      "status": "confirmed",
+      "created_at": "2026-05-05T11:30:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 3,
+    "fields": {
+      "product": 4,
+      "quantity": 3,
+      "status": "shipped",
+      "created_at": "2026-05-10T14:00:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 4,
+    "fields": {
+      "product": 2,
+      "quantity": 1,
+      "status": "delivered",
+      "created_at": "2026-05-12T08:45:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 5,
+    "fields": {
+      "product": 6,
+      "quantity": 5,
+      "status": "pending",
+      "created_at": "2026-05-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 6,
+    "fields": {
+      "product": 5,
+      "quantity": 1,
+      "status": "cancelled",
+      "created_at": "2026-05-18T16:20:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 7,
+    "fields": {
+      "product": 8,
+      "quantity": 2,
+      "status": "pending",
+      "created_at": "2026-05-20T07:00:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 8,
+    "fields": {
+      "product": 1,
+      "quantity": 1,
+      "status": "confirmed",
+      "created_at": "2026-05-25T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 9,
+    "fields": {
+      "product": 3,
+      "quantity": 4,
+      "status": "shipped",
+      "created_at": "2026-05-28T09:30:00Z"
+    }
+  },
+  {
+    "model": "store.order",
+    "pk": 10,
+    "fields": {
+      "product": 7,
+      "quantity": 1,
+      "status": "pending",
+      "created_at": "2026-06-01T11:00:00Z"
+    }
+  }
+]
